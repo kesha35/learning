@@ -55,5 +55,62 @@
             </tr>
         </table>
     </div>
+    <div>
+        <h3 class="section-title" align="center">I ordered the site</h3>
+        <form action="order.php" method="post">
+
+            <div>
+                <label>
+                    <span>Client name</span>
+                    <input type="text" id="client_name" name="client_name" placeholder="Enter your name">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>enter your email</span>
+                    <input type="text" name="client_name" placeholder="Enter your gmail">
+                </label>
+            </div>
+            <div>
+                <label for="client_name">
+                    <span>choose field</span>
+                    <input type="radio" name="gendre" value="male"> M
+                    <input type="radio" name="gendre" value="female"> J
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Additional Features</span>
+                    <input type="checkbox" name="extra" value="adaptive">
+                    Adaptability
+                    <input type="checkbox" name="extra" value="hosting">
+                    installation on the hosting
+                    <input type="checkbox" name="extra" value="support">
+                    further support
+                    <input type="checkbox" name="extra" value="admin">
+                    setting admin panel
+                </label>
+            </div>
+            <div>
+                <label>
+                       <span>Type of site</span>
+                    <select name="type" multiple>
+                        <option value="eshop">Online shop</option>
+                        <option value="lading">Lending</option>
+                        <option value="card">Side card</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>attach a sketch</span>
+                    <input type="file" name="file">
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
